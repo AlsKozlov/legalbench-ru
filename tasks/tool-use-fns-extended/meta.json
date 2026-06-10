@@ -1,0 +1,14 @@
+{
+  "id": "tool-use-fns-extended",
+  "title": "Выбор инструмента — fns-extended (tool routing)",
+  "reasoning_type": "tool-use",
+  "domain": "fns-extended",
+  "answer_type": "tool_call",
+  "scoring": "tool_match",
+  "track": "tool-use",
+  "description": "BFCL-RU: query→правильный MCP-вызов (фокус fns-extended); ловушки + негативы; адверс. верифицировано.",
+  "gold_source": "реальный tool_catalog 17 MCP",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.3.0"
+}

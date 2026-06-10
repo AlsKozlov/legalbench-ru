@@ -1,0 +1,14 @@
+{
+  "id": "temporal-statute-flip",
+  "title": "Темпоральная устойчивость: нормы, изменённые во времени (temporal probe)",
+  "reasoning_type": "rule-conclusion",
+  "domain": "general",
+  "answer_type": "binary",
+  "scoring": "binary_accuracy",
+  "description": "Курируемый temporal-прототип (новизна). Каждый кейс — реальное изменение закона РФ, переворачивающее ответ: gold = ДЕЙСТВУЮЩЕЕ право; temporal_text — прежняя редакция, ведущая к противоположному выводу. Прогон: closed (знает ли модель текущую норму или анкорится на старую training-редакции), grounded (текущая норма), temporal (устаревшая норма подана без пометки — поведётся ли). Нормы выверены вручную (pravo не отдаёт консолидированные тексты кодексов), но всё равно needs_expert_review.",
+  "track": "reasoning",
+  "gold_source": "реальные статутные изменения РФ с датами вступления в силу",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.3.0"
+}

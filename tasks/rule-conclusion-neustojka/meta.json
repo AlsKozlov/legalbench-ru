@@ -1,0 +1,13 @@
+{
+  "id": "rule-conclusion-neustojka",
+  "title": "Вывод Да/Нет по фактам: неустойка, давность, обеспечение (rule-conclusion)",
+  "reasoning_type": "rule-conclusion",
+  "domain": "contract",
+  "answer_type": "binary",
+  "scoring": "binary_accuracy",
+  "description": "Бинарный вывод по фактам с применением нормы. Покрывает типовые ловушки: инициатива суда vs заявление стороны, возмездность, субъектный состав.",
+  "gold_source": "ГК РФ (ст.199, 250, 332, 333, 381), СК/ГК наследство; ПП ВС № 7/2016",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.1.0"
+}

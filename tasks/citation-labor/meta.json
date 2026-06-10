@@ -1,0 +1,13 @@
+{
+  "id": "citation-labor",
+  "title": "Точная ссылка на норму (citation) — labor",
+  "reasoning_type": "citation",
+  "domain": "labor",
+  "answer_type": "norm_citation",
+  "scoring": "norm_f1",
+  "description": "Сгенерировано + адверсариально верифицировано (3 линзы). Домен labor.",
+  "gold_source": "lawyer-authored skills репо + верификация норм",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.2.0"
+}

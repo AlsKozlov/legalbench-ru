@@ -1,0 +1,13 @@
+{
+  "id": "rule-recall-civil-terms",
+  "title": "Сроки, размеры и основания в гражданском праве (rule-recall)",
+  "reasoning_type": "rule-recall",
+  "domain": "civil",
+  "answer_type": "extraction",
+  "scoring": "normalized_match",
+  "description": "Базовые проверяемые сроки/размеры/основания ГК РФ и смежных законов (ЗоЗПП, СК РФ, ФЗ-127). Только стабильные black-letter нормы, не волатильные величины.",
+  "gold_source": "ГК РФ, ЗоЗПП (2300-1), СК РФ, ФЗ-127 о банкротстве",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.1.0"
+}

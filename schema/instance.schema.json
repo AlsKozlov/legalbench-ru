@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ru-legal/benches/legalbench-ru/instance.schema.json",
+  "title": "LegalBench-RU instance (one line of test.jsonl)",
+  "type": "object",
+  "required": ["id", "question", "answer"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "question": { "type": "string", "minLength": 5 },
+    "context": { "type": "string", "description": "facts/clause/norm text for application & interpretation tasks" },
+    "answer": {
+      "description": "gold answer: string for extraction/binary/choice; array of norm refs for norm_citation; array of terms for open",
+      "oneOf": [
+        { "type": "string" },
+        { "type": "array", "items": { "type": "string" } }
+      ]
+    },
+    "accept": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "alternative acceptable surface forms of the gold answer (extraction)"
+    },
+    "choices": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "options for multiple_choice (labelled A, B, C, ... in order)"
+    },
+    "gold_norm": {
+      "description": "provenance: source norm(s) a reviewer verifies via pravo.gov.ru",
+      "oneOf": [
+        { "type": "string" },
+        { "type": "array", "items": { "type": "string" } }
+      ]
+    },
+    "norm_text": { "type": "string", "description": "verbatim statutory text of the governing norm — injected in --mode grounded (reasoning track)" },
+    "distractor_text": { "type": "string", "description": "plausible WRONG norm text — injected in --mode distractor (counterfactual-robustness probe)" },
+    "temporal_text": { "type": "string", "description": "OUTDATED/repealed version of the norm — injected in --mode temporal (temporal-validity probe; gold answer is current law)" },
+    "explanation": { "type": "string", "description": "why this answer is correct (for the reviewer, not the model)" },
+    "volatile": { "type": "boolean", "description": "true if gold depends on a value that changes often (amounts, rates)" },
+    "last_checked": { "type": "string", "description": "YYYY-MM-DD the gold was last verified against current law" },
+    "needs_expert_review": { "type": "boolean" }
+  }
+}

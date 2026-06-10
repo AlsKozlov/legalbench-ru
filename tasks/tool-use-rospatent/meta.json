@@ -1,0 +1,14 @@
+{
+  "id": "tool-use-rospatent",
+  "title": "Выбор инструмента — rospatent (tool routing)",
+  "reasoning_type": "tool-use",
+  "domain": "rospatent",
+  "answer_type": "tool_call",
+  "scoring": "tool_match",
+  "track": "tool-use",
+  "description": "BFCL-RU: query→правильный rospatent-вызов; негатив; адверс. верифицировано.",
+  "gold_source": "tool_catalog",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.3.0"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "rule-conclusion-civil",
+  "title": "Вывод Да/Нет (rule-conclusion) — civil",
+  "reasoning_type": "rule-conclusion",
+  "domain": "civil",
+  "answer_type": "binary",
+  "scoring": "binary_accuracy",
+  "description": "Сгенерировано + адверсариально верифицировано (3 линзы). Домен civil.",
+  "gold_source": "lawyer-authored skills репо + верификация норм",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.2.0"
+}

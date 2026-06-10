@@ -1,0 +1,13 @@
+{
+  "id": "rule-recall-litigation",
+  "title": "Воспроизведение нормы (rule-recall) — litigation",
+  "reasoning_type": "rule-recall",
+  "domain": "litigation",
+  "answer_type": "extraction",
+  "scoring": "normalized_match",
+  "description": "Сгенерировано + адверсариально верифицировано (3 линзы). Домен litigation.",
+  "gold_source": "lawyer-authored skills репо + верификация норм",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.2.0"
+}

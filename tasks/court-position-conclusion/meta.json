@@ -1,0 +1,14 @@
+{
+  "id": "court-position-conclusion",
+  "title": "Вывод по позиции суда (court rule-conclusion)",
+  "reasoning_type": "rule-conclusion",
+  "domain": "court-practice",
+  "answer_type": "binary",
+  "scoring": "binary_accuracy",
+  "track": "reasoning",
+  "description": "Заземлено в РЕАЛЬНЫХ позициях ПП ВС (45) + ПКС (27); адверс. верифицировано на верность источнику.",
+  "gold_source": "plenum-vs + ksrf-corpus (реальные key_positions)",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.3.0"
+}

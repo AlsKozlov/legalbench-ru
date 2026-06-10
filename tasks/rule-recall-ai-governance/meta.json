@@ -1,0 +1,13 @@
+{
+  "id": "rule-recall-ai-governance",
+  "title": "Воспроизведение нормы (rule-recall) — ai-governance",
+  "reasoning_type": "rule-recall",
+  "domain": "ai-governance",
+  "answer_type": "extraction",
+  "scoring": "normalized_match",
+  "description": "Сгенерировано + адверсариально верифицировано (3 линзы). Домен ai-governance.",
+  "gold_source": "lawyer-authored skills репо + верификация норм",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.2.0"
+}

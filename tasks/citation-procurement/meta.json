@@ -1,0 +1,13 @@
+{
+  "id": "citation-procurement",
+  "title": "Точная ссылка на норму (citation) — procurement",
+  "reasoning_type": "citation",
+  "domain": "procurement",
+  "answer_type": "norm_citation",
+  "scoring": "norm_f1",
+  "description": "Сгенерировано + адверсариально верифицировано (3 линзы). Домен procurement.",
+  "gold_source": "lawyer-authored skills репо + верификация норм",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.2.0"
+}

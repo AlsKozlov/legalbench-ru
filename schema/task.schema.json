@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ru-legal/benches/legalbench-ru/task.schema.json",
+  "title": "LegalBench-RU task metadata (meta.json)",
+  "type": "object",
+  "required": ["id", "title", "reasoning_type", "domain", "answer_type", "scoring", "needs_expert_review", "version"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "kebab-case id; must equal the task folder name"
+    },
+    "title": { "type": "string", "minLength": 3 },
+    "reasoning_type": {
+      "type": "string",
+      "enum": ["rule-recall", "rule-application", "rule-conclusion", "issue-spotting", "interpretation", "rhetorical", "citation"]
+    },
+    "domain": {
+      "type": "string",
+      "description": "legal practice area (civil, contract, labor, tax, bankruptcy, consumer, family, inheritance, property, corporate, ...)"
+    },
+    "answer_type": {
+      "type": "string",
+      "enum": ["extraction", "binary", "multiple_choice", "norm_citation", "open"]
+    },
+    "scoring": {
+      "type": "string",
+      "enum": ["normalized_match", "binary_accuracy", "choice_accuracy", "norm_f1", "term_coverage"]
+    },
+    "description": { "type": "string" },
+    "gold_source": { "type": "string", "description": "where gold answers come from / which norms" },
+    "track": { "type": "string", "enum": ["knowledge", "reasoning"], "description": "override; default derived from reasoning_type (citation/rule-recall=knowledge, else reasoning)" },
+    "needs_expert_review": { "type": "boolean" },
+    "reviewed_by": { "type": "string", "description": "domain-owner who validated; set when review done" },
+    "reviewed_at": { "type": "string", "description": "YYYY-MM-DD of validation" },
+    "license": { "type": "string", "default": "CC-BY-4.0" },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" }
+  }
+}

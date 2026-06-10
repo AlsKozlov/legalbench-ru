@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.deepeval/
+.DS_Store
+out/
+
+# internal docs / build scripts — local only, NOT in repo
+ARTICLE-HABR*.md
+LANDSCAPE.md
+ROADMAP.md
+AUDIT.md
+RESULTS.md
+EVAL-DESIGN.md
+TECHNICAL-GUIDE.md
+_assemble.py
+_run_experiment.sh
+publish/CHECKLIST.md
+assets/hero.png
+assets/

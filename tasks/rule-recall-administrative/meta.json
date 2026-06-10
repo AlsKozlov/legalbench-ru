@@ -1,0 +1,13 @@
+{
+  "id": "rule-recall-administrative",
+  "title": "Воспроизведение нормы (rule-recall) — administrative",
+  "reasoning_type": "rule-recall",
+  "domain": "administrative",
+  "answer_type": "extraction",
+  "scoring": "normalized_match",
+  "description": "Сгенерировано + адверсариально верифицировано (3 линзы). Домен administrative.",
+  "gold_source": "lawyer-authored skills репо + верификация норм",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.2.0"
+}

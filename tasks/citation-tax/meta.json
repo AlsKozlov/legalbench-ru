@@ -1,0 +1,13 @@
+{
+  "id": "citation-tax",
+  "title": "Точная ссылка на норму (citation) — tax",
+  "reasoning_type": "citation",
+  "domain": "tax",
+  "answer_type": "norm_citation",
+  "scoring": "norm_f1",
+  "description": "Сгенерировано + адверсариально верифицировано (3 линзы). Домен tax.",
+  "gold_source": "lawyer-authored skills репо + верификация норм",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.2.0"
+}

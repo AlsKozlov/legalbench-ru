@@ -1,0 +1,13 @@
+{
+  "id": "rule-conclusion-procurement",
+  "title": "Вывод Да/Нет (rule-conclusion) — procurement",
+  "reasoning_type": "rule-conclusion",
+  "domain": "procurement",
+  "answer_type": "binary",
+  "scoring": "binary_accuracy",
+  "description": "Сгенерировано + адверсариально верифицировано (3 линзы). Домен procurement.",
+  "gold_source": "lawyer-authored skills репо + верификация норм",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.2.0"
+}

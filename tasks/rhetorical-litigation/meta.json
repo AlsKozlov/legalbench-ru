@@ -1,0 +1,13 @@
+{
+  "id": "rhetorical-litigation",
+  "title": "Структура аргументации (rhetorical) — litigation",
+  "reasoning_type": "rhetorical",
+  "domain": "litigation",
+  "answer_type": "multiple_choice",
+  "scoring": "choice_accuracy",
+  "description": "Сгенерировано + адверсариально верифицировано (3 линзы). Домен litigation.",
+  "gold_source": "lawyer-authored skills репо + верификация норм",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.2.0"
+}

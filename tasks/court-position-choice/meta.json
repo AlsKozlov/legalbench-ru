@@ -1,0 +1,14 @@
+{
+  "id": "court-position-choice",
+  "title": "Подбор позиции суда (court choice)",
+  "reasoning_type": "issue-spotting",
+  "domain": "court-practice",
+  "answer_type": "multiple_choice",
+  "scoring": "choice_accuracy",
+  "track": "reasoning",
+  "description": "Подбор позиции суда; ТРУДНЫЕ дистракторы — 4 реальных short_title из БЛИЗКОЙ области. Заземлено в ПП ВС+ПКС, адверс. верифицировано.",
+  "gold_source": "plenum-vs + ksrf-corpus (реальные key_positions)",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.3.0"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "interpretation-corporate",
+  "title": "Толкование (interpretation) — corporate",
+  "reasoning_type": "interpretation",
+  "domain": "corporate",
+  "answer_type": "multiple_choice",
+  "scoring": "choice_accuracy",
+  "description": "Сгенерировано + адверсариально верифицировано (3 линзы). Домен corporate.",
+  "gold_source": "lawyer-authored skills репо + верификация норм",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.2.0"
+}

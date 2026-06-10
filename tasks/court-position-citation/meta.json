@@ -1,0 +1,14 @@
+{
+  "id": "court-position-citation",
+  "title": "Цитирование позиции суда (court citation)",
+  "reasoning_type": "citation",
+  "domain": "court-practice",
+  "answer_type": "extraction",
+  "scoring": "normalized_match",
+  "track": "reasoning",
+  "description": "Заземлено в РЕАЛЬНЫХ позициях ПП ВС (45) + ПКС (27); адверс. верифицировано на верность источнику.",
+  "gold_source": "plenum-vs + ksrf-corpus (реальные key_positions)",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.3.0"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "rule-application-interest-395",
+  "title": "Расчёт процентов и неустойки (ст.395/330 ГК) — вычислимый gold",
+  "reasoning_type": "rule-application",
+  "domain": "civil",
+  "answer_type": "extraction",
+  "scoring": "normalized_match",
+  "description": "Детерминированно сгенерированные расчётные задачи (gold вычислен скриптом, не LLM). Все входные данные в вопросе; не запоминаемо. Покрывает ст.395 (1 и 2 периода) и договорные пени (ст.330).",
+  "track": "reasoning",
+  "gold_source": "арифметика по ст.395/330 ГК, gold вычислен",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.3.0"
+}

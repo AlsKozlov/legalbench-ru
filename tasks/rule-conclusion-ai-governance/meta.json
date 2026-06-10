@@ -1,0 +1,13 @@
+{
+  "id": "rule-conclusion-ai-governance",
+  "title": "Вывод Да/Нет (rule-conclusion) — ai-governance",
+  "reasoning_type": "rule-conclusion",
+  "domain": "ai-governance",
+  "answer_type": "binary",
+  "scoring": "binary_accuracy",
+  "description": "Сгенерировано + адверсариально верифицировано (3 линзы). Домен ai-governance.",
+  "gold_source": "lawyer-authored skills репо + верификация норм",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.2.0"
+}

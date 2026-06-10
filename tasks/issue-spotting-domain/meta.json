@@ -1,0 +1,13 @@
+{
+  "id": "issue-spotting-domain",
+  "title": "Определение отрасли права по фабуле (issue-spotting)",
+  "reasoning_type": "issue-spotting",
+  "domain": "general",
+  "answer_type": "multiple_choice",
+  "scoring": "choice_accuracy",
+  "description": "По краткой фабуле определить отрасль/режим права. Базовый роутинг — первый шаг любого юр-агента. Варианты помечены буквами A, B, C, D по порядку.",
+  "gold_source": "общеправовая классификация отраслей РФ",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.1.0"
+}

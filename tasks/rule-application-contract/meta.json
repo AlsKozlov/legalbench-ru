@@ -1,0 +1,13 @@
+{
+  "id": "rule-application-contract",
+  "title": "Применение нормы к фактам (rule-application) — contract",
+  "reasoning_type": "rule-application",
+  "domain": "contract",
+  "answer_type": "extraction",
+  "scoring": "normalized_match",
+  "description": "Сгенерировано + адверсариально верифицировано (3 линзы). Домен contract.",
+  "gold_source": "lawyer-authored skills репо + верификация норм",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.2.0"
+}

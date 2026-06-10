@@ -1,0 +1,13 @@
+{
+  "id": "norm-citation-civil",
+  "title": "Точная ссылка на норму-источник (citation)",
+  "reasoning_type": "citation",
+  "domain": "civil",
+  "answer_type": "norm_citation",
+  "scoring": "norm_f1",
+  "description": "RU-специфичный тип: проверяет, цитирует ли модель реальную статью кодекса, регулирующую институт. Ядро fact-checking value prop ru-legal. Скоринг — set-F1 по нормализованным ссылкам уровня кодекс+статья.",
+  "gold_source": "ГК РФ, ТК РФ — устойчивая привязка институт→статья",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.1.0"
+}

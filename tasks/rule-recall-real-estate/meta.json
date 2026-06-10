@@ -1,0 +1,13 @@
+{
+  "id": "rule-recall-real-estate",
+  "title": "Воспроизведение нормы (rule-recall) — real-estate",
+  "reasoning_type": "rule-recall",
+  "domain": "real-estate",
+  "answer_type": "extraction",
+  "scoring": "normalized_match",
+  "description": "Сгенерировано + адверсариально верифицировано (3 линзы). Домен real-estate.",
+  "gold_source": "lawyer-authored skills репо + верификация норм",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.2.0"
+}

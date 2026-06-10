@@ -1,0 +1,13 @@
+{
+  "id": "rule-recall-ip",
+  "title": "Воспроизведение нормы (rule-recall) — ip",
+  "reasoning_type": "rule-recall",
+  "domain": "ip",
+  "answer_type": "extraction",
+  "scoring": "normalized_match",
+  "description": "Сгенерировано + адверсариально верифицировано (3 линзы). Домен ip.",
+  "gold_source": "lawyer-authored skills репо + верификация норм",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.2.0"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "rule-recall-compliance",
+  "title": "Воспроизведение нормы (rule-recall) — compliance",
+  "reasoning_type": "rule-recall",
+  "domain": "compliance",
+  "answer_type": "extraction",
+  "scoring": "normalized_match",
+  "description": "Сгенерировано + адверсариально верифицировано (3 линзы). Домен compliance.",
+  "gold_source": "lawyer-authored skills репо + верификация норм",
+  "needs_expert_review": true,
+  "license": "CC-BY-4.0",
+  "version": "0.2.0"
+}
