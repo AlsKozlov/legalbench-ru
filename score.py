@@ -189,8 +189,12 @@ def score_tool_call(inst: dict, output: str) -> float:
     obj = _extract_json_obj(output) or {}
     pred_tool = obj.get("tool")
     pred_args = obj.get("args") if isinstance(obj.get("args"), dict) else {}
-    if not gold_tool:  # негатив: правильно НЕ звать инструмент
-        return 1.0 if (not pred_tool or str(pred_tool).lower() in {"none", "null"}) else 0.0
+    if not gold_tool:  # негатив: правильно — ЯВНО отказаться вызывать инструмент
+        o = norm(output)
+        explicit_null = ("tool" in obj and not pred_tool)  # {"tool": null}
+        refused = explicit_null or any(
+            k in o for k in ("ни один", "не подход", "нет подходящ", "недостаточно", "no tool", "null"))
+        return 1.0 if (refused and o) else 0.0  # пустой ответ балл НЕ получает
     g, p = _norm_tool(gold_tool), _norm_tool(pred_tool)
     if g != p and g.split(".")[-1] != p.split(".")[-1]:
         return 0.0
